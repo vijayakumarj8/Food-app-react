@@ -3,7 +3,8 @@ import './Homemenu.css';
 import Offerimg from '../../Assets/burger.jpg';
 import pizz from '../../Assets/pizz.jpg'
 import Menuitemimg1 from '../../Assets/pizza.png';
-
+import bur2 from '../../Assets/bur2.png'
+import pizz2 from '../../Assets/pizz2.png'
 export default function Homemenu() {
   return (
 
@@ -60,7 +61,7 @@ export default function Homemenu() {
                 </div>
                 <div className="menuitem">
                     <div className="itemimg">
-                        <img src={Menuitemimg1} alt="menus" />
+                        <img src={pizz2} alt="menus" />
                     </div>
                     <div className="itemcontent">
                         <h2>Delicious Pizza</h2>
