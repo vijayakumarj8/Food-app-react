@@ -1,0 +1,272 @@
+/* header{
+    background-color: rgb(0, 0, 0); color:#ffbe33;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;padding: 5px;
+
+}
+.fir-sec {display: flex;
+align-items: center;justify-content: space-around; background-color: rgb(0, 0, 0);width: 250px;} 
+
+.fir-sec .menu-toggle{
+    padding: 10px;
+    font-size: 30px;
+    display: none;
+}
+
+.second-sec ul li{
+    display: inline-block;padding: 10px;
+}
+
+.second-sec a{
+    text-decoration: none;
+    color: white;
+    
+}
+.second-sec a:hover{
+    color: #ffbe33;
+}
+
+.third-sec ul li{
+    padding: 10px;
+    display: inline-block;align-items: center;
+}
+.third-sec ul li a{color: white;font-weight: bold;font-size: 20px;}
+button{
+    padding: 10px;border-radius: 5px;
+    background-color: #ffbe33;
+    border: 2px solid #ffbe33;color: rgb(0, 0, 0);font-size: 15px;
+}
+button:hover{
+background-color: #d49c19;
+border:2px solid #d49c19 }
+
+
+@media (min-width:320px) and (max-width:480px){
+    header{
+        display: block;text-align: center;
+    }
+    .fir-sec {width: inherit;}
+    .fir-sec .menu-toggle{
+        display: block;
+    }
+    .second-sec ul li{display: block;}
+} */
+
+
+/* mobile view correcting */
+
+
+/* correcting all */
+/* ---------- General Style ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  color: #ffbe33;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: relative;
+  z-index: 1000;
+}
+
+/* ---------- First Section ---------- */
+.fir-sec {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fir-sec h2 {
+  font-family: cursive;
+  font-size: 28px;
+}
+
+.fir-sec .menu-toggle {
+  display: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* ---------- Second Section (Links) ---------- */
+.second-sec ul {
+  list-style: none;
+}
+
+.second-sec ul li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.second-sec a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.second-sec a:hover {
+  color: #ffbe33;
+}
+
+/* ---------- Third Section (Icons + Button) ---------- */
+.third-sec ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.third-sec ul li {
+  padding: 10px;
+}
+
+.third-sec ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #ffbe33;
+  border: 2px solid #ffbe33;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #d49c19;
+  border: 2px solid #d49c19;
+}
+
+/* ---------- Tablet (481px–768px) ---------- */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .second-sec ul li {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+/* ---------- Mobile (320px–480px) ---------- */
+@media (min-width: 320px) and (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  header {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .fir-sec {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .fir-sec .menu-toggle {
+    display: block;
+  }
+
+  /* Hide by default */
+  .second-sec {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  /* When menu is open */
+  .second-sec.active {
+    max-height: 400px;
+    opacity: 1;
+  }
+
+  .second-sec ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .second-sec ul li {
+    display: block;
+    padding: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    animation: slideIn 0.4s ease forwards;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .third-sec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+
+  .third-sec ul {
+    padding: 0;
+  }
+
+  .third-sec ul li {
+    display: inline-block;
+  }
+}
+
+/* ---------- Large Screens (above 1024px) ---------- */
+@media (min-width: 1024px) {
+  header {
+    padding: 15px 80px;
+  }
+
+  .second-sec ul li {
+    padding: 15px 20px;
+  }
+
+  .fir-sec h2 {
+    font-size: 32px;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}

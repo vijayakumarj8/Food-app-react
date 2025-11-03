@@ -1,0 +1,53 @@
+.contact-sec{
+    margin-top: 40px;
+}
+
+
+.left-part, .right-part{
+    background-color: rgba(250, 235, 215, 0);width: 500px;padding: 30px;
+
+}
+.left-part input{width: 400px;padding: 15px;border-radius: 5px;border: 1px solid rgb(9, 1, 1);margin: 10px;}
+.left-part select{width: 400px;padding: 15px;border-radius: 5px;border: 1px solid rgb(9, 1, 1);margin: 5px 10px;}
+.contact-sec{
+    display: flex;justify-content:center;align-items: center !important;
+}
+
+.btn{
+    background-color: rgba(11, 7, 1, 0);text-align: center;margin-top: 10px;margin-bottom: 60px;
+}
+ .right-part iframe{
+   border-radius: 15px;
+} 
+.error {
+  color: red;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+@media (min-width:320px) and (max-width:480px){
+    .contact-sec{
+        display: block;
+    }
+    .left-part select {
+        width: 204px;
+    }
+    .left-part input {
+        width: 205px;
+    }
+    .left-part {padding: 20px;width: inherit;}
+    .right-part iframe{
+        width: 300px;
+    }
+      .right-part{
+        width: inherit;padding: 10px;
+      }
+      .btn {width: inherit;margin-top: inherit;    padding: 10px}
+.myForm{text-align: center;}
+
+
+} 
+
+
+
+

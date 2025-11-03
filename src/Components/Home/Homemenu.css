@@ -1,0 +1,120 @@
+.homemenuec{
+    padding: 75px 60px;
+    background-color: azure;
+}
+.offerbox {
+    background: #222831;
+    padding: 20px 15px;
+    margin: 15px 10px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+}
+.imgpart img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 5px solid yellow;
+}
+.offercontent{
+    text-align: center;
+}
+.offercontent h2{
+    font-size: 26px;
+    padding: 5px 10px;
+}
+.offercontent h1{
+    font-size: 36px;
+    padding: 5px 10px;
+}
+.heading{
+    margin-top: 50px;
+}
+.menutop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuitem{
+    background: rgb(1, 16, 16);
+    margin: 15px 10px;
+    color: #fff;
+    width: 400px;
+    border-radius: 15px;
+}
+.menuitem{
+    text-align: center;
+   
+}
+.itemimg{
+     background-color: rgb(255 190 51);
+     border-bottom-left-radius: 60px;
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+}
+
+.menuitem img{
+    width: 170px;
+    padding: 10px;
+    margin: 10px;
+}
+.itemcontent{
+    padding: 10px;
+    margin: 10px;
+}
+.itemcontent h2{
+    padding: 5px;
+    font-size: 18px;
+}
+.itemcontent p{
+    padding: 5px;
+    font-size: 18px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 10px 20px;
+}
+.itemicon {
+    background-color: rgb(246, 146, 22);
+    color: #ece5aa;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    padding: 15px 20px;
+    text-align: center;
+}
+.ourmenus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width:320px) and (max-width:480px){
+    .homemenuec{
+        padding: 75px 0;
+    }
+    .menutop{
+        display: block;
+    }
+    .offerbox{
+        width: inherit;
+        display: block;
+        text-align: center;
+    }
+    .menuitem{
+        width: inherit;
+    }
+    .ourmenus{
+        display: block;
+    }
+}

@@ -1,0 +1,50 @@
+
+
+.homeabout{
+    padding: 75px 60px;
+    background-color: #222831;
+    display: flex;
+    align-items: center;
+    justify-content: center;color: white;
+}
+.leftpart{
+    width: 600px;
+    text-align: center;
+    padding: 20px;
+    margin: 15px 10px;
+}
+.leftpart img{
+    width: 300px;
+}
+.rightpart button{
+     margin: 10px;
+}
+.rightpart{
+     width: 600px;
+    padding: 20px;
+    margin: 15px 10px;
+}
+.rightpart h1{
+    padding: 10px;
+    font-size: 40px;
+}
+.rightpart p{
+    padding: 10px ;
+       font-size: 16px;
+}
+@media (min-width:320px) and (max-width:480px){
+    .homeabout{
+        padding: 75px 0;
+        display: block;
+    }
+    .leftpart,.rightpart{
+        width: inherit;
+    } 
+    .leftpart{ 
+        margin: 0px;padding: 0px;
+    }
+    .rightpart{text-align: center;}
+    .leftpart img{
+    width: 200px;
+}
+}
