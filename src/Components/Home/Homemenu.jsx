@@ -1,6 +1,7 @@
 import React from 'react'
 import './Homemenu.css';
 import Offerimg from '../../Assets/burger.jpg';
+import pizz from '../../Assets/pizz.jpg'
 import Menuitemimg1 from '../../Assets/pizza.png';
 
 export default function Homemenu() {
@@ -22,7 +23,7 @@ export default function Homemenu() {
              
                 <div className="offerbox">
                     <div className="imgpart">
-                        <img src={Offerimg} alt="offer" />
+                        <img src={pizz} alt="offer" />
                     </div>
                     <div className="offercontent">
                         <h2>Tasty Thursdays</h2>
